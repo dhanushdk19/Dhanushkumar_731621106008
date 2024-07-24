@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Using Literals
+        var student = {name:"dhanush",age: 21,studies:"computer science"};
+        document.write("<br> Student Name : "+student.name);
+        document.write("<br> student age : "+student.age);
+        document.write("<br> Student studies : "+student.studies +"<hr>");
+
+        document.write("<hr>");
+
+        //Using Object
+        var student = new Object();
+        student.name = "DK";
+        student.age = 20;
+        student.studies="full stack development";
+        document.write("<br> student name : "+student.name);
+        document.write("<br> student studies : "+student.studies);
+
+        document.write("<hr>");
+        document.write("<hr>");
+
+        var st = new Object();
+        st.one = "kavi";
+        st.two = 21;
+        st.three = "ECE";
+        document.write("<br><center><table border='' width=50% color=blue ");
+        document.write("<tr><td> Name</td><td>"+st.one+"</td></tr></table></center>")
+
+        document.write("<br><hr>");
+        document.write("<hr>");
+
+        class students{
+            constructor(name,age,department){
+                this.name = name;
+                this.age = age;
+                this.department = department;
+            }
+            display(){
+                document.write("<br><center><table border='' width=50% background-color: blue;");
+                document.write("<tr><td> Name</td><td>"+this.name+"</td></tr>");
+                document.write("<tr><td> Age</td><td>"+this.age+"</td></tr>");
+                document.write("<tr><td> Department</td><td>"+this.department+"</td></tr>");
+                document.write("</table></center><br>");
+                
+            }
+        }
+
+        var st1 = new students("kumar",19,"ECE");
+        st1.display();
+
+        document.write("<br><hr>");
+        document.write("<hr>");
+
+        var st2 = new students("priya",18,"ECE");
+        st2.display();
+
+        document.write("<br><hr>");
+        document.write("<hr>");
+
+        var st3 = new students("sowmiya",21,"ECE");
+        st3.display();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ans(){
+        let op = document.getElementById("num").value;
+        let fact=1;
+        for(let i=1;i<=op;i++){
+            fact = fact*i;
+        }
+        document.getElementById("out").innerHTML = "Factorial : "+fact;
+    }
+    </script>
+</head>
+<body>
+    Enter the Input <input onblur="ans()" type="text" id="num" onfocus="this.value=' '" value="Number kudra"/>
+    <br>
+    <button onclick="ans()">Answer...</button>
+    <!-- <div id="out">
+
+    </div> -->
+    <p id="out"></p>
+</body>
+</html>

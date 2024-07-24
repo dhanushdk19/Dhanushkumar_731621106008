@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrow function with arguments
+        const sum = (a,b) => a * b;
+        document.write("Addition : "+sum(10 ,3));
+
+        //arrow function without arguments
+        const sub = () => 10-3;
+        document.write("<br>Difference : "+sub());
+
+        const mul = (x,y) => {return(x/y)};
+        document.write("<br>Division : "+mul(30,5));
+
+        const big = (a,b)=>{
+            if(a>b)
+            return a;
+        else
+        return b;
+        }
+        document.write("<br> Big Number is : "+big(20,40));
+
+        const fact = (a) =>{
+            let run = 1;
+            for(let i=1;i<=a;i++){
+                run = run*i;
+            }
+           return run;
+        }
+        document.write("<br> Factorial value is : "+fact(5));
+    </script>
+</body>
+</html>

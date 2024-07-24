@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    enter the Number <input type="text" id="n" />
+    <br>
+    <button onclick="factorial()">Factorial</button>
+    <br>
+    <pre></pre>
+    <div id="out"></div>
+</center>
+    <script>
+        const factorial = () =>{
+            let n = parseInt(document.getElementById("n").value);
+            let result = "<table border ='1' width='50%'>";
+                result += "<tr><th>Number</th><th>Factorial</th></tr>";
+
+                let fact = 1;
+                for(let i=1;i<=n;i++){
+                    fact = fact*i;
+                    result += "<tr><td>"+i+"</td><td>"+fact+"</td></tr>"
+                    
+                }
+                result += "</table>";
+                document.getElementById("out").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
